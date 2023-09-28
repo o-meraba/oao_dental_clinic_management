@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_oao_dental-clinic-management_oao_dental-clinic-management,oao_dental-clinic-management.oao_dental-clinic-management,model_oao_dental-clinic-management_oao_dental-clinic-management,base.group_user,1,1,1,1
+access.dental.patients,access_dental_patients,oao_dental-clinic-management.model_dental_patients,base.group_user,1,1,1,1

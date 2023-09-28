@@ -10,3 +10,6 @@ class DentalPatients(models.Model):
 
     name = fields.Char(string="Patient Name", tracking=True)
     surname = fields.Char(string="Patient Surname", tracking=True)
+    date_of_birth = fields.Char(string="Date of Birth")
+    patient_age = fields.Integer(string="Patient Age")
+    patient_id = fields.Char(string="Patient ID")

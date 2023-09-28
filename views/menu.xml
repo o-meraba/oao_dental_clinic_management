@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+     <menuitem id="menu_dental_clinic_root"
+              name="Dental Clinic"
+              web_icon=""
+              sequence="0"/>
+
+     <menuitem id="menu_patient_master"
+               name="Patient Details"
+               parent="menu_dental_clinic_root"
+               sequence="0"/>
+
+     <menuitem id="menu_appointment_master"
+               name="Appointments"
+               parent="menu_dental_clinic_root"
+               sequence="0"/>
+
+     <menuitem id="menu_configuration"
+              name="Configurations"
+              parent="menu_dental_clinic_root"
+              sequence="0"/>
+
+</odoo>
