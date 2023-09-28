@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
- <record id="action_dental_patient" model="ir.actions.act_window">
+ <record id="view_dental_patient_form" model="ir.ui.view">
+            <field name="name">dental.patients.form</field>
+            <field name="model">dental.patients</field>
+               <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <field name="image" widget="image" class="oe_avatar"/>
+                        <div class="oe_title">
+                            <h4>
+                                <field name="patient_id" readonly="1"/>
+                            </h4>
+                            <h2>
+                                <label for="name" string="Name" class="oe_edit_only"/>
+                                <field name="name"/>
+                                <label for="surname" string="Surname" class="oe_edit_only"/>
+                                <![CDATA[&#160;]]>
+                                <field name="surname"/>
+                            </h2>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="date_of_birth"/>
+                                <field name="age"/>
+                                <field name="phone"/>
+                                <field name="email"/>
+                            </group>
+                            <group>
+                                 <field name="gender" invisible="context.get('hide_gender')" widget="radio"/>                                
+                            </group>
+                        </group>
+                        
+                        <notebook>
+                            <page string="General Information" name="general_info">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Patient Critical Information " name="patient_critical_info">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Medication" name="medication">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Diseases" name="diseases">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Prescription" name="prescription">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Appointments" name="appointments">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                            <page string="Payments" name="payments">
+                                <label for="note" string="Description"/>
+                                <field name="note"/>
+                            </page>
+                           
+                        </notebook>
+                    </sheet>
+                    
+                </form>
+            </field>
+        </record>
+
+
+ <record id="action_dental_patients" model="ir.actions.act_window">
         <field name="name">Patients</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">dental.patients</field>
@@ -18,7 +87,7 @@
 
     <menuitem  id="menu_patient"
                name="Patients"
-               action="action_dental_patient"
+               action="action_dental_patients"
                parent="menu_patient_master"
                sequence="0"/>
 
