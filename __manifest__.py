@@ -27,6 +27,7 @@
         'security/ir.model.access.csv',
          'views/menu.xml',
         'views/dental_patients_view.xml',
+        'views/dental_appointment_view.xml',
        
     ],
   
