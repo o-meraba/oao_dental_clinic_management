@@ -30,7 +30,8 @@
         'views/dental_patients_view.xml',
         'views/dental_appointment_view.xml',
         'views/dental_center_view.xml',
-        'views/dental_room_view.xml'
+        'views/dental_room_view.xml',
+        'views/dentist_view.xml',
        
     ],
     'installable': True,
