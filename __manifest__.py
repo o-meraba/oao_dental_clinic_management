@@ -32,6 +32,7 @@
         'views/dental_center_view.xml',
         'views/dental_room_view.xml',
         'views/dentist_view.xml',
+        'views/disease_view.xml',
        
     ],
     'installable': True,

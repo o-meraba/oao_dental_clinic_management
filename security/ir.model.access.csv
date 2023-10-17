@@ -4,4 +4,5 @@ access.dental.appointment,access_dental_appointment,oao_dental_clinic_management
 access.dental.center,access_dental_center,oao_dental_clinic_management.model_dental_center,base.group_user,1,1,1,1
 access.dental.room,access_dental_room,oao_dental_clinic_management.model_dental_room,base.group_user,1,1,1,1
 access.dentist,access_dentist,oao_dental_clinic_management.model_dentist,base.group_user,1,1,1,1
+access.disease,access_disease,oao_dental_clinic_management.model_disease,base.group_user,1,1,1,1
 
