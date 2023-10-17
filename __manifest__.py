@@ -33,6 +33,7 @@
         'views/dental_room_view.xml',
         'views/dentist_view.xml',
         'views/disease_view.xml',
+        'views/disease_category_view.xml'
        
     ],
     'installable': True,
